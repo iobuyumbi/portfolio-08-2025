@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node backend/server.js",
     "dev": "nodemon backend/server.js",
-    "build": "mkdir -p public && cp -r frontend/* public/",
+    "build": "echo 'No build step required for static frontend'",
     "test": "echo 'Tests not implemented yet'"
   },
   "engines": {
