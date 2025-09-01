@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Innocent Obuyumbi Nyongesa</title>
+    <meta
+      name="description"
+      content="Portfolio of network engineering, cloud, security, and development projects by Innocent Obuyumbi Nyongesa."
+    />
+    <meta name="theme-color" content="#d62723" />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <main>
+      <!-- Page Header -->
+      <section class="page-header">
+        <div class="container">
+          <h1>Projects Portfolio</h1>
+          <p class="hero-tagline">
+            A showcase of my technical work and case studies
+          </p>
+        </div>
+      </section>
+
+      <!-- Filters -->
+      <section class="section-tight">
+        <div class="container">
+          <div class="flex justify-between items-center flex-wrap gap-md">
+            <div class="flex gap-sm flex-wrap">
+              <button
+                class="btn btn-secondary btn-sm filter-btn active"
+                data-filter="all"
+              >
+                All
+              </button>
+              <button
+                class="btn btn-secondary btn-sm filter-btn"
+                data-filter="networking"
+              >
+                Networking
+              </button>
+              <button
+                class="btn btn-secondary btn-sm filter-btn"
+                data-filter="cloud"
+              >
+                Cloud
+              </button>
+              <button
+                class="btn btn-secondary btn-sm filter-btn"
+                data-filter="development"
+              >
+                Development
+              </button>
+              <button
+                class="btn btn-secondary btn-sm filter-btn"
+                data-filter="security"
+              >
+                Security
+              </button>
+            </div>
+
+            <select
+              id="sort-select"
+              class="form-control"
+              style="width: auto; min-width: 150px"
+            >
+              <option value="date-desc">Newest First</option>
+              <option value="date-asc">Oldest First</option>
+              <option value="title-asc">Title A-Z</option>
+              <option value="title-desc">Title Z-A</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Grid -->
+      <section class="section">
+        <div class="container">
+          <div class="grid grid-cols-3" id="projects-grid">
+            <!-- Projects will be loaded dynamically -->
+            <div
+              class="card project-card"
+              data-category="development"
+              data-date="2024-08"
+            >
+
+              <div class="project-content">
+                <h3 class="project-title">Microfinance Management System</h3>
+                <p class="project-meta">Full-Stack Development • MERN Stack</p>
+                <p class="project-description">
+                  Enterprise MIS with loan workflows, customer tracking,
+                  analytics, and RBAC. Improved operational efficiency by 35%
+                  and reduced manual errors.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">MongoDB</span>
+                  <span class="tag">Express</span>
+                  <span class="tag">React</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">RBAC</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card project-card"
+              data-category="networking"
+              data-date="2023-12"
+            >
+
+              <div class="project-content">
+                <h3 class="project-title">Network Infrastructure Redesign</h3>
+                <p class="project-meta">
+                  Network Engineering • Cisco & pfSense
+                </p>
+                <p class="project-description">
+                  Complete LAN/WAN redesign with firewall rules, VPN setup, and
+                  redundancy planning. Achieved 99.9% uptime and significantly
+                  improved security posture.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Cisco</span>
+                  <span class="tag">pfSense</span>
+                  <span class="tag">VLAN</span>
+                  <span class="tag">VPN</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card project-card"
+              data-category="cloud"
+              data-date="2023-10"
+            >
+
+              <div class="project-content">
+                <h3 class="project-title">Cloud Migration & Hardening</h3>
+                <p class="project-meta">Cloud Engineering • Azure & AWS</p>
+                <p class="project-description">
+                  Lift-and-shift migration with IAM baselines, backup policies,
+                  and cost monitoring. Achieved 40% cost reduction while
+                  improving security posture.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Azure</span>
+                  <span class="tag">AWS</span>
+                  <span class="tag">Security</span>
+                  <span class="tag">Migration</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card project-card"
+              data-category="development"
+              data-date="2023-08"
+            >
+
+              <div class="project-content">
+                <h3 class="project-title">Automation Toolkit</h3>
+                <p class="project-meta">Development • Python & Bash</p>
+                <p class="project-description">
+                  Automated backups, alerts, and reports to reduce toil and
+                  incidents. Saved 15+ hours per week in manual operations
+                  tasks.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Automation</span>
+                  <span class="tag">Bash</span>
+                  <span class="tag">Operations</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card project-card"
+              data-category="development"
+              data-date="2023-06"
+            >
+
+              <div class="project-content">
+                <h3 class="project-title">API for Internal Services</h3>
+                <p class="project-meta">
+                  Backend Development • Node.js & Spring Boot
+                </p>
+                <p class="project-description">
+                  Internal REST APIs with authentication, rate limiting, and
+                  observability hooks. Enabled integration between 5 previously
+                  siloed systems.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Node.js</span>
+                  <span class="tag">Spring Boot</span>
+                  <span class="tag">REST API</span>
+                  <span class="tag">Integration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="section bg-surface">
+        <div class="container">
+          <div class="card text-center mx-auto" style="max-width: 600px">
+            <h2>Need a similar solution?</h2>
+            <p class="text-muted mb-xl">
+              I'm available for freelance projects and consulting. Let's discuss
+              how I can help with your specific needs.
+            </p>
+            <div class="flex gap-md justify-center">
+              <a href="/contact" class="btn btn-primary">
+                <i class="fas fa-envelope"></i>
+                Contact Me
+              </a>
+              <a href="/about" class="btn btn-secondary">
+                <i class="fas fa-user"></i>
+                Learn More About Me
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/projects.js"></script>
+  </body>
+</html>
