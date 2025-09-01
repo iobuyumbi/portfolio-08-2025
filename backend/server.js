@@ -99,13 +99,13 @@ const pages = ["about", "projects", "contact"];
 
 pages.forEach((page) => {
   app.get(`/${page}`, (req, res) => {
-    res.sendFile(path.join(__dirname, `../frontend/pages/${page}.html`));
+    res.sendFile(path.join(__dirname, `../frontend/${page}.html`));
   });
 });
 
 // Home route
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/pages/home.html"));
+  res.sendFile(path.join(__dirname, "../frontend/index.html"));
 });
 
 // Health check endpoint
@@ -119,7 +119,7 @@ app.get("/api/health", (req, res) => {
 
 // 404 handler
 app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "../frontend/pages/404.html"));
+  res.status(404).sendFile(path.join(__dirname, "../frontend/404.html"));
 });
 
 // Global error handler

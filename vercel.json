@@ -16,18 +16,10 @@
       "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff2?|eot|ttf|otf))",
       "dest": "/frontend/$1"
     },
-    { "src": "/about.(html)?", "dest": "/frontend/about.html" },
-    { "src": "/about", "dest": "/frontend/about.html" },
-
-    { "src": "/projects.(html)?", "dest": "/frontend/projects.html" },
-    { "src": "/projects", "dest": "/frontend/projects.html" },
-
-    { "src": "/contact.html", "dest": "/frontend/contact.html" },
-    { "src": "/contact", "dest": "/frontend/contact.html" },
-
-    { "src": "/404.html", "dest": "/frontend/404.html" },
-    { "src": "/404", "dest": "/frontend/404.html" },
-
+    { "src": "/about(.html)?", "dest": "/frontend/about.html" },
+    { "src": "/projects(.html)?", "dest": "/frontend/portfolio.html" },
+    { "src": "/contact(.html)?", "dest": "/frontend/contact.html" },
+    { "src": "/404(.html)?", "dest": "/frontend/404.html" },
     { "src": "/", "dest": "/frontend/index.html" },
     { "src": "/(.*)", "dest": "/frontend/$1" }
   ]
