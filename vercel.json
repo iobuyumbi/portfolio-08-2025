@@ -11,10 +11,12 @@
     }
   ],
   "routes": [
-    { "src": "/about", "dest": "/frontend/about.html" },
-    { "src": "/projects", "dest": "/frontend/projects.html" },
-    { "src": "/contact", "dest": "/frontend/contact.html" },
-    { "src": "/", "dest": "/frontend/index.html" },
-    { "src": "/api/(.*)", "dest": "/backend/server.js" }
+    { "src": "/about", "dest": "/about.html" },
+    { "src": "/projects", "dest": "/projects.html" },
+    { "src": "/contact", "dest": "/contact.html" },
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/api/(.*)", "dest": "/backend/server.js" },
+    { "src": "/(.*)", "dest": "/index.html" },
+    { "src": "/404", "dest": "/404.html" }
   ]
 }
