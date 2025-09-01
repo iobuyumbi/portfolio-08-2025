@@ -1,0 +1,90 @@
+:root {
+  /* Colors - Megapari inspired */
+  --primary: #d62723;
+  --primary-rgb: 214, 39, 35;
+  --background: #111111;
+  --background-rgb: 17, 17, 17;
+  --surface: #1a1a1a;
+  --surface-rgb: 26, 26, 26;
+  --text: #ffffff;
+  --text-rgb: 255, 255, 255;
+  --muted: #a1a1a1;
+  --muted-rgb: 161, 161, 161;
+  --border: #303030;
+  --border-rgb: 48, 48, 48;
+
+  /* Status colors */
+  --success: #4caf50;
+  --success-rgb: 76, 175, 80;
+  --error: #f44336;
+  --error-rgb: 244, 67, 54;
+  --warning: #ffc107;
+  --warning-rgb: 255, 193, 7;
+  --info: #2196f3;
+  --info-rgb: 33, 150, 243;
+
+  /* Typography */
+  --font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+
+  /* Spacing - Reduced for more compact design */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 0.75rem;
+  --space-lg: 1rem;
+  --space-xl: 1.25rem;
+  --space-2xl: 1.5rem;
+  --space-3xl: 2rem;
+  --space-4xl: 2.5rem;
+  --space-5xl: 3rem;
+
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* Transitions */
+  --transition-fast: all 0.15s ease;
+  --transition: all 0.3s ease;
+  --transition-slow: all 0.5s ease;
+
+  /* Layout */
+  --container-max-width: 1200px;
+  --header-height: 70px;
+}
+
+/* Light theme overrides */
+:root[data-theme="light"] {
+  --background: #ffffff;
+  --background-rgb: 255, 255, 255;
+  --surface: #f8f9fa;
+  --surface-rgb: 248, 249, 250;
+  --text: #1a1a1a;
+  --text-rgb: 26, 26, 26;
+  --muted: #6b7280;
+  --muted-rgb: 107, 114, 128;
+  --border: #e5e7eb;
+  --border-rgb: 229, 231, 235;
+}

@@ -1,0 +1,88 @@
+/* Theme System */
+
+/* Theme transitions */
+*,
+*::before,
+*::after {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dark theme (default) */
+:root {
+  color-scheme: dark;
+}
+
+/* Light theme */
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+/* Theme-specific adjustments */
+:root[data-theme="light"] body {
+  background: linear-gradient(135deg, var(--background) 0%, #f9fafb 100%);
+}
+
+:root[data-theme="light"] .navbar {
+  background: rgba(var(--background-rgb), 0.95);
+  backdrop-filter: blur(10px);
+}
+
+:root[data-theme="light"] .card {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+:root[data-theme="light"] .card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Theme toggle animations */
+.theme-slider {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.theme-slider:before {
+  background-color: var(--primary);
+}
+
+/* Hide/show theme-specific content */
+.dark-only {
+  display: block;
+}
+
+.light-only {
+  display: none;
+}
+
+:root[data-theme="light"] .dark-only {
+  display: none;
+}
+
+:root[data-theme="light"] .light-only {
+  display: block;
+}
+
+/* Background patterns */
+.bg-pattern {
+  position: relative;
+}
+
+.bg-pattern::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(var(--primary-rgb), 0.05) 1px,
+    transparent 0
+  );
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: -1;
+}

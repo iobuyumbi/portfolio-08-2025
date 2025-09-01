@@ -1,0 +1,129 @@
+/* Main Styles - Import all CSS modules */
+
+@import url("variables.css");
+@import url("base.css");
+@import url("layout.css");
+@import url("components.css");
+@import url("themes.css");
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+/* Custom styles specific to this portfolio */
+
+/* Body padding for fixed navbar */
+body {
+  padding-top: var(--header-height);
+}
+
+/* Hero section specific styles */
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.hero-text h1 {
+  margin-bottom: var(--space-lg);
+  background: linear-gradient(135deg, var(--text) 0%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-tagline {
+  font-size: var(--font-size-lg);
+  color: var(--muted);
+  margin-bottom: var(--space-2xl);
+  max-width: 60ch;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.hero-highlight {
+  background: rgba(var(--surface-rgb), 0.8);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  backdrop-filter: blur(10px);
+}
+
+/* Section headers */
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.section-title {
+  margin-bottom: var(--space-sm);
+}
+
+.section-subtitle {
+  color: var(--muted);
+  font-size: var(--font-size-lg);
+  max-width: 60ch;
+  margin: 0 auto;
+}
+
+/* Kicker text */
+.kicker {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-sm);
+  background-color: rgba(var(--primary-rgb), 0.1);
+  color: var(--primary);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-md);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive text sizes */
+@media (max-width: 768px) {
+  h1 {
+    font-size: var(--font-size-3xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-2xl);
+  }
+
+  .hero-tagline {
+    font-size: var(--font-size-base);
+  }
+
+  .hero-cta {
+    flex-direction: column;
+  }
+}
